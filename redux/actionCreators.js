@@ -1,10 +1,10 @@
 import getCurrentTime from "../utils/getCurrentTime.js";
-
+import * as actionTypes from "./actionTypes.js";
 
 
 export function addCurrentTime () {
     return {
-        type: 'ADD_CURRENT_TIME',
+        type: actionTypes.ADD_CURRENT_TIME,
         payload: getCurrentTime()
     }
 }
@@ -12,7 +12,7 @@ export function addCurrentTime () {
 
 export function clearTimes () {
     return {
-        type: 'CLEAR_ALL_TIMES'
+        type: actionTypes.CLEAR_ALL_TIMES
     }
 }
 
