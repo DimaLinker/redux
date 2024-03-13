@@ -1,7 +1,7 @@
-const intitialState = []
+const initialState = []
 
 
-function reducer(state, action) {
+function reducer(state = initialState, action) {
     switch (action.type) {
         case "ADD_CURRENT_TIME":
             return [...state, action.payload]
@@ -11,3 +11,6 @@ function reducer(state, action) {
             return state
     }
 }
+
+export default reducer;
+
